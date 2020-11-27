@@ -5,9 +5,10 @@ html{
     height: 100%;
 }
 body{
-    background-color: black;
+    background-color: #231f20;
     scroll-behavior: smooth;
-    transition: .5s ease-in-out;  
+    transition: .5s ease-in-out; 
+    overflow: hidden;
 }
 #bg{
     width: 1920px;
@@ -64,15 +65,6 @@ nav ul li a:hover{
 }
 
 /* ---------------------main----------------- */
-.sns{
-    
-    position: fixed;
-    top: calc(60% - 70px);
-}
-.sns ul li{
-    margin-left: 10px;
-    padding: 20%;
-}
 .mc{
     margin-top: 200px;
     display: flex;
@@ -96,8 +88,7 @@ nav ul li a:hover{
     
 }
 video{
-    width: 80%;
-    /* z-index: 990; */
+    width: 70%;
     opacity: 0.7;
 }
 .black{
@@ -110,28 +101,26 @@ video{
     display: flex;
     justify-content: space-around;
     font-family: 'Vidaloka', serif;
-    /* position: relative; */
-
 }
 
 .aboutinfo{
     position: absolute;
-    top: 100%; left: 6%;
+    top: 90%; left: 10%;
 }
 .aboutinfo img{
     width: 100%;
 }
 .neyong{
     white-space: pre-line;
-    font-size: 2.5em;
+    font-size: 2em;
     position: absolute;
     line-height: 1.0;
-    left: 53%;
+    left: 43%; top: 80%;
     font-family: 'Goldman', cursive;
     color: white;
 }
 .neyong h1{
-    font-size: 5em;
+    font-size: 4.5em;
     transition: .7s ease-in-out;
 }
 .neyong h1:hover{
@@ -185,7 +174,7 @@ video{
     
 }
 .rrr{
-    margin-top: -100px;
+    margin-top: 150px;
     color: white;
     display: flex;
     justify-content: space-around;
@@ -211,6 +200,9 @@ video{
 .can{
     transition: .7s ease-in-out;
 }
+.can p{
+    line-height: 2.0;
+}
 .can h2:hover{
     text-shadow: 0.03em 0.03em 0 rgba(255,0,0,.5), 0.03em -0.03em 0 rgba(0,255,0,.5), -0.03em 0.03em 0 rgba(0,0,255,.5);
 }
@@ -218,6 +210,13 @@ video{
     position: absolute;
     right: 0;
 }
+#vd{
+    position: absolute;
+    width: 45%;
+    right: 3%; top: 200%;
+    z-index: -1;
+}
+
 /* -----------------slider----------------- */
 .main-carousel{
     width: 100%; height: 100%;
@@ -268,7 +267,7 @@ video{
 }
 
 .footer{
-    margin-top: 300px;
+    margin-top: 100px;
     padding:1%;
     font-family: 'Vidaloka', serif;
     display: flex;

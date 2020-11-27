@@ -6,7 +6,7 @@ html{
       
 }
 body{ 
-    background-color: #000;
+    background-color: #231f20;
     scroll-behavior: smooth; 
     transition: .7s ease-in-out;
 }
@@ -68,17 +68,6 @@ nav ul li a:hover{
 
 
 /* ---------------------main----------------- */
-
-.sns{
-    
-    position: fixed;
-    top: calc(50% - 70px);
-}
-.sns ul li{
-    margin-left: 10px;
-    padding: 20%;
-}
-
 .main-contents{
     padding-top: 130px;
     padding-left: 3%;
@@ -169,17 +158,19 @@ nav ul li a:hover{
     position: absolute; top: 0; left: 8%;
     font-size: 8em;
     color: white;
+    background-color: black;
     font-family: 'Goldman', cursive;
 }
 .qwerr p{
     position: absolute;
     bottom:5%; right: 6%;
     font-size: 1.5em;
-    color: white;
-    line-height: 2.0;
+    color: black;
+    background-color: white;
+    line-height: 1.5;
     white-space: pre-line;
     text-align: left;
-    
+    font-family: 'Noto Sans KR', sans-serif;
 }
 .qwerr p a{
     color: black;
@@ -205,18 +196,20 @@ nav ul li a:hover{
     position: absolute; top:0; right: -5%;
     font-size: 8em;
     color: white;
+    background-color: black;
     font-family: 'Goldman', cursive;
 }
 .qwerr1 p{
     position: absolute;
     bottom: 10%; left: 20%;
     font-size: 1.5em;
-    color: white;
-    line-height: 2.0;
+    color: black;
+    background-color: white;
+    line-height: 1.5;
     white-space: pre-line;
     text-align: left;
     z-index: 999;
-    
+    font-family: 'Noto Sans KR', sans-serif;
 }
 .qwerr1 p a{
     color: white;
@@ -242,18 +235,21 @@ nav ul li a:hover{
     position: absolute; top:0; left: 10%;
     font-size: 8em;
     color: white;
-    
+    background-color: black;
     font-family: 'Goldman', cursive;
 }
 .qwerr2 p{
     position: absolute;
     bottom: 5%; right:6%;
+    padding: 0;
     font-size: 1.5em;
-    line-height: 2.0;
-    color: white;
+    line-height: 1.5;
+    color: black;
+    background-color: white;
     white-space: pre-line;
     text-align: left;
     z-index: 999;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 .qwerr2 p a{
     color: black;
@@ -276,35 +272,21 @@ nav ul li a:hover{
 }
 .qwerr3 h1{
     position: absolute; top:0; right: -5%;
-    font-size: 8em;
+    font-size: 7.5em;
     color: white;
+    background-color: black;
     font-family: 'Goldman', cursive;
 }
 .qwerr3 p{
     position: absolute;
-    bottom: 6%; right: 5%;
+    bottom: 6%; left: 18%;
     font-size: 1.5em;
     line-height: 2.0;
     color: black;
+    background-color: white;
     white-space: pre-line;
     text-align: left;
     z-index: 999;
-}
-.qwerr3 p a{
-    color: white;
-    background:black;
-    font-size: 1em;
-    font-weight: bold;
-    font-style: italic;
-    padding: 8px 12px;
-    font-family: 'Goldman', cursive;
-}
-.qwerr3 p a:hover{
-    background: white;
-    border: 1px solid #fff;
-    color: black;
-    transform: translate(-1px, 1px);
-    transition: .7s ease-in-out;
 }
 
 /* --------------footer--------------- */
@@ -355,4 +337,11 @@ nav ul li a:hover{
     transform: rotate(10deg);
     transition: .7s ease-in-out;
 }
-
+.btn{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 8px 12px;
+    color: white;
+    font-size: 2em;
+}
