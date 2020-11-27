@@ -1,0 +1,229 @@
+@import url('common.css');
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: #f9f7f3;
+}
+
+/* ---------------header---------------- */
+
+header{
+    font-family: 'Karla', sans-serif;
+    
+}
+nav p{
+    color: white;
+    font-size: 0.8em;
+    font-family: 'Lobster Two', cursive;
+}
+nav ul{
+    width: 100%;
+    padding: 8px 12px;
+    display: flex;
+    justify-content: center;
+    position: absolute; top: 0;
+    opacity:0.8;
+}
+nav ul li{
+    padding: 8px 12px;
+    margin: 2%;
+    font-size: 1em;
+    font-weight: bold;
+}
+nav ul li a{
+    color: black;
+    font-size: 1em;
+    margin: 1%;
+}
+nav ul li:hover{
+    opacity: 0.5;
+    transition: .9s;
+}
+
+/* ---------------------main----------------- */
+.sns{
+    position: fixed;
+    top: calc(60% - 70px);
+}
+.sns ul li{
+    margin-left: 10px;
+    padding: 20%;
+}
+.top-con{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+video{
+    width: 80%;
+}
+
+/* -----------main--------------- */
+
+.seh{
+    position: absolute;
+    left: 12%; bottom: 0;
+    font-family: 'Vidaloka', serif;
+    z-index: 999;
+}
+.seh h1{
+    margin-top: 200px;
+    font-size: 10em;
+    line-height: 0.75;
+    bottom: 0;
+}
+.seh .htwo{
+    margin-top: 100px;
+    line-height: 2.0;
+}
+.my-pic{
+    margin-top: 200px;
+    position: absolute;
+    line-height: 2.0;
+    right: 25%; top: 50%;
+    font-size: 2em;
+    font-family: 'Vidaloka', serif;
+}
+.my-pic h1{
+    font-size: 0.8em;
+}
+.licen{
+    margin-top: 200px;
+    font-size: 2em;
+    position: absolute;
+    top: 180%; right: 30%;
+}
+.licen ul{
+    margin-top: 50px;
+    line-height: 2.0;
+}
+.licen ul li{
+    transition: .7s ease-out;
+    font-family: 'Vidaloka', serif;
+    padding: 8px;
+}
+
+.licen ul li:nth-of-type(1){
+    background: #000;
+    color: white;
+    width: 150%;
+}
+.licen ul li:nth-of-type(2){
+    background: red;
+    color: white;
+    width: 120%;
+}
+.licen ul li:nth-of-type(3){
+    background: blue;
+    color: white;
+    width: 100%;
+}
+.licen ul li:nth-of-type(4){
+    background: green;
+    color: white;
+    width: 140%;
+}
+.licen ul li:nth-of-type(5){
+    background: gray;
+    color: white;
+    width: 40%;
+}
+
+i{
+    color: black;
+    display: inline-block;
+    margin: 1%;
+    padding-right: 1%;
+
+}
+
+.gall{
+    position: absolute;
+    font-size: 5em;
+    font-family: 'Vidaloka', serif;
+    left: 15%; top: 15%;
+    z-index: 999;
+}
+/* ----------------slider-------------------- */
+
+.swiper-container {
+    width:1900px;
+	height:800px;
+	transition: .5s;
+}
+
+.swiper-wrapper a{
+    color: black;
+    background:white;
+    font-size: 2em;
+    font-style: italic;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 5%; right: 4%;
+    font-family: 'Goldman', cursive;
+}
+.swiper-wrapper a:hover{
+    background: none;
+    border: 1px solid #fff;
+    color: white;
+    transform: translate(-1px, 1px);
+    transition: .7s ease-in-out;
+    
+}
+.swiper-slide {
+	text-align:center;
+	display:flex; 
+	align-items:center; 
+	justify-content:center; 
+}
+.swiper-slide img {
+    box-shadow: none;
+}
+
+.swiper-button-next{
+    right: 15%; top: 10%;
+}
+.swiper-button-prev{
+    left: 80%; top: 10%;
+}
+
+/* -----------------footer----------------- */
+
+#topBtn{
+    position: fixed; 
+    right: 0.5%;
+    bottom: 4%;
+    display:none;
+    z-index: 999;
+    transform: rotate(90deg);
+    background-color: black;
+    padding: 12px 30px;
+    color: white;
+}
+.footer{
+    margin-top: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-right: 0px;
+    border-left: 0px;
+}
+
+.footer ul li{
+    padding: 10%;    
+}
+.footer ul li:hover{
+    opacity: 0.5;
+    transition: .9s;
+}
+
+img #banner{
+    margin-top: 50px;
+}
+.blank{
+    height: 400px;
+}

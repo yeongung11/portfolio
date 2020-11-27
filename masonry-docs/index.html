@@ -1,0 +1,118 @@
+<!doctype html>
+<html class="export" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title>Masonry</title>
+
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
+</head>
+
+<body>
+
+
+
+    <div class="grid">
+        <div class="grid-sizer"></div>
+        <div class="gutter-sizer"></div>
+        
+        <div class="g-item"><img src="KakaoTalk_20200824_123327740.jpg"></div>
+        <div class="g-item g-width-3"><img src="KakaoTalk_20200824_123327740.jpg"></div>
+        <div class="g-item"><img src="KakaoTalk_20200824_123327740.jpg"></div>
+        <div class="g-item"><img src="KakaoTalk_20200824_123327740.jpg"></div>
+        <div class="g-item"><img src="KakaoTalk_20200824_123327740.jpg"></div>
+        <div class="g-item"><img src="KakaoTalk_20200824_123327740.jpg"></div>
+        <div class="g-item"><img src="KakaoTalk_20200824_123327740.jpg"></div>
+        <div class="g-item g-width-3"><img src="KakaoTalk_20200824_123327740.jpg"></div>
+        <div class="g-item"><img src="KakaoTalk_20200824_123327740.jpg"></div>
+        <div class="g-item"><img src="KakaoTalk_20200824_123327740.jpg"></div>
+        <div class="g-item"><img src="KakaoTalk_20200824_123327740.jpg"></div>
+        <div class="g-item"><img src="KakaoTalk_20200824_123327740.jpg"></div>
+        <div class="g-item"><img src="KakaoTalk_20200824_123327740.jpg"></div>
+    </div>
+
+    <script>
+        $(function() {
+            var $grid = $('.grid').masonry({
+                itemSelector: '.g-item',
+                columnWidth: '.grid-sizer',
+                percentPosition: true,
+                horizontalOrder: false, //1~100 아이템를 순서대로 진열
+                gutter: '.gutter-sizer'
+            });
+            
+            $grid.imagesLoaded().progress( function() {
+                $grid.masonry('layout');
+            });
+
+        });
+
+         /* transition: .5s; */
+        //var drop = document.querySelectorAll('.g-item img')
+        // drop.forEach(function(ee){
+        //         ee.addEventListener('dragover',dragOver);
+        //         ee.addEventListener('dragenter',dragEnter);
+        //         ee.addEventListener('dragleave',dragLeave);
+        //         ee.addEventListener('drop',dragDrop);
+        //      });
+        
+    </script>
+    
+    <style>
+        /*------px------*/
+        /*.grid {
+            width:1040px;
+            margin:0 auto;
+        }
+
+        .grid .g-item {
+            width: 200px;
+            height: 100px;
+            background: #00f;
+            margin-bottom: 10px;
+        }*/
+        
+        /*----percent----*/
+        .grid {
+            width:70%;
+            margin:0 auto;
+            
+        }
+
+        .grid .g-item {
+            font-size:0;
+            background: #00f;
+            margin-bottom: 10px;
+        }
+        .grid .g-item img{width:100%}
+        
+        .grid .g-item,
+        .grid .grid-sizer{width:18%;}
+        .grid .gutter-sizer{width:1.8%;}
+        .grid .g-width-3{width:37.5%;}
+        
+        @media (max-width:768px){
+            .grid .g-item,
+            .grid .grid-sizer{width:10%;}
+
+            .grid .gutter-sizer{width:4%;}
+        }
+
+        /* @media (max-width:1024px){
+          .grid .g-item,
+            .grid .grid-sizer{width:53%;}
+
+            .grid .gutter-sizer{width:8%;}
+        } */
+        
+        
+    </style>
+
+
+
+</body></html>
