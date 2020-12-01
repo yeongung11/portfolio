@@ -109,15 +109,18 @@ video{
 }
 .aboutinfo img{
     width: 100%;
+    
 }
 .neyong{
     white-space: pre-line;
     font-size: 2em;
     position: absolute;
     line-height: 1.0;
-    left: 43%; top: 80%;
-    font-family: 'Goldman', cursive;
+    left: 43%; top: 75%;
+    /* font-family: 'Goldman', cursive; */
+    font-family: 'Vidaloka', serif;
     color: white;
+    text-shadow: gray 3px 0 3px;
 }
 .neyong h1{
     font-size: 4.5em;
@@ -182,7 +185,8 @@ video{
     left: 15%;
     font-size: 2em;
     text-align: left;
-    font-family: 'Goldman', cursive;
+    /* font-family: 'Goldman', cursive; */
+    font-family: 'Vidaloka', serif;
     position: absolute;
 }
 .rrr h2{

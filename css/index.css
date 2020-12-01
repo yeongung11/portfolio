@@ -79,12 +79,14 @@ nav ul li a:hover{
     top: 30%; left: 2%;
     transition: .9s ease-out;
     color: rgba(255,255,255,1);
+    text-shadow: 0.03em 0.03em 0 rgba(255,0,0,.5), 0.03em -0.03em 0 rgba(0,255,0,.5), -0.03em 0.03em 0 rgba(0,0,255,.5);
     /* font-family: 'Lobster Two', cursive; */
+    font-style: italic;
 }
 .mc h1:hover{
-    text-shadow: 0.03em 0.03em 0 rgba(255,0,0,.5), 0.03em -0.03em 0 rgba(0,255,0,.5), -0.03em 0.03em 0 rgba(0,0,255,.5);
+    
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 33, 0, 0, 1);
-    font-style: italic;
+    
 }
 video{
     width: 70%;

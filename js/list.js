@@ -25,7 +25,7 @@ $(function(){
             $section.each(function(idx){
                 var $this = $(this);
                 var $newtop = $sectionInfo[idx] - sct;
-                if(sct > $sectionInfo[idx]) {$newtop *= 0.4;}
+                if(sct > $sectionInfo[idx]) {$newtop *= 0.7;}
                 $(this).css({top:$newtop});
                 
             });
@@ -46,7 +46,7 @@ $(function(){
             $section1.each(function(idx){
                 var $this1 = $(this);
                 var $newtop1 = $sectionInfo1[idx] - sct1;
-                if(sct1 > $sectionInfo1[idx]) {$newtop1 *= 0.4;}
+                if(sct1 > $sectionInfo1[idx]) {$newtop1 *= 0.7;}
                 $(this).css({top:$newtop1});
             });
         });
@@ -66,7 +66,7 @@ $(function(){
             $section2.each(function(idx){
                 var $this2 = $(this);
                 var $newtop2 = $sectionInfo2[idx] - sct2;
-                if(sct2 > $sectionInfo2[idx]) {$newtop2 *= 0.4;}
+                if(sct2 > $sectionInfo2[idx]) {$newtop2 *= 0.7;}
                 $(this).css({top:$newtop2});
             });
         });
@@ -88,7 +88,7 @@ $(function(){
             $section3.each(function(idx){
                 var $this3 = $(this);
                 var $newtop3 = $sectionInfo3[idx] - sct3;
-                if(sct3 > $sectionInfo3[idx]) {$newtop3 *= 0.4;}
+                if(sct3 > $sectionInfo3[idx]) {$newtop3 *= 0.7;}
                 $(this).css({top:$newtop3});
             });
         });
@@ -102,6 +102,14 @@ $(function(){
                     $('#topBtn').fadeOut();
                 }
             });
+
+            // $(window).scroll(function(){
+            //     if($(this).scrollTop() > 100){
+            //         $('#about_us').fadeOut();
+            //     }else{
+                    
+            //     }
+            // });
 
             $('#topBtn').click(function(){
                 $('html,body').animate({

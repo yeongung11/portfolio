@@ -9,6 +9,7 @@ body{
     background-color: #231f20;
     scroll-behavior: smooth; 
     transition: .5s ease-in-out;
+    overflow: hidden;
 }
 
 #bg{
